@@ -10,18 +10,24 @@ body {
 /* Navbar */
 .navigation {
     background-color: #373738;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
 }
 
 .inline-block {
-    padding: 0%;
+    
     margin: 0%;
     display: inline-block;
     vertical-align: middle;
 }
 
 .logo {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     width: 18%;
-    padding: 1%;
+    padding: 2%;
     text-align: center;
     border-right: 2px solid #8bd8bd;
 }
@@ -49,6 +55,7 @@ li a {
     color: #8bd8bd;
     text-decoration: none;
     padding: 14px 16px;
+    transition: background-color 0.3s ease;
 }
 
 li a:hover:not(.active) {
@@ -71,6 +78,9 @@ li a:hover:not(.active) {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 700px;
     width: 1200px; /* was originally 500px per HW17, but I wanted the img to stretch wider */
     margin: 0 auto;
@@ -98,7 +108,8 @@ li a:hover:not(.active) {
   }
 
 h1 {
-    text-decoration: underline solid #8bd8bd
+    text-decoration: underline solid #8bd8bd;
+    animation: dropIn 1s ease-in-out;
 }
 
 p {
@@ -108,6 +119,8 @@ p {
 
 /* Button Styling */
 .button {
+    display: flex;
+    align-self: start;
     background-color: #8bd8bd;
     border: 1px solid whitesmoke;
     padding: 5px 10px;
@@ -116,16 +129,21 @@ p {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
+    transition: 0.3s;
 }
 
 .button:hover {
     background-color: #7bccb0;
     border: 1px solid #373738;
     color: #373738;
+    transform: scale(2);
 }
 
 /* Footer */
 footer {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     background-color: #373738;
     text-align: center;
 }
@@ -145,4 +163,19 @@ footer li a {
 /* Typography */
 li, p {
     font-family: 'Roboto', sans-serif;
+}
+
+/* Animations */
+@keyframes dropIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+    80% {
+        transform: translateY(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
