@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>UX/UI Portfolio</title>
 </head>
 <body>
     <header class="navigation">
         <div class="inline-block logo">
-            <img src="./images/Logo-1.png" alt="Logo">
+            <img src="./images/Logo-1.png" alt="Logo" class="headerLogo">
             <nav class="inline-block">
                 <ul>
-                    <li class="inline-block">about</li>
-                    <li class="inline-block">skills</li>
-                    <li class="inline-block">work</li>
-                    <li class="inline-block">contact</li>
+                    <li class="inline-block active"><a href="#">About</a></li>
+                    <li class="inline-block"><a href="#">Skills</a></li>
+                    <li class="inline-block"><a href="#">Work</a></li>
+                    <li class="inline-block"><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -24,19 +27,19 @@
 
     <section class="heroImg">
         <div class="content">
-            <img src="./images/pic-1.jpg" alt="Image">
+            <img src="./images/pic-1.jpg" alt="Image" class="center">
             <h1>About Me</h1>
             <p>UX/UI Designer with a background as a Quality Assurance Analyst and Mobile Retail Sales. Vast skill set includes HTML, CSS, JavaScript, Manual Testing, Responsive Design, Visual Prototyping and Wireframing. Looking to apply acquired skills within the workplace to create relevant, yet engaging products and features while keeping empathy at the forefront with the products’ targeted users in mind. Has experience in conducting user interviews and gathering survey data in order to create case studies and low to high-fidelity prototypes that assist in bringing a products’ vision and features to life. Prior studies in computer science, web development and manual testing coupled with strong teamwork and collaboration skills make me a valuable asset to any team.</p>
-            <button>Download Resume</button>
+            <button class="button">Download Resume</button>
         </div>
     </section>
 
     <footer>
         <ul>
-            <li class="inline-block">about</li>
-            <li class="inline-block">skills</li>
-            <li class="inline-block">work</li>
-            <li class="inline-block">contact</li>
+            <li class="inline-block"><a href="#">about</a></li>
+            <li class="inline-block"><a href="#">skills</a></li>
+            <li class="inline-block"><a href="#">work</a></li>
+            <li class="inline-block"><a href="#">contact</a></li>
         </ul>
     </footer>
 </body>
