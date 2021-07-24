@@ -79,7 +79,7 @@ li a:hover:not(.active) {
 }
 
 .content img {
-    width: 250px;
+    width: 200px;
     height: auto;
     border: 3px solid whitesmoke;
     border-radius: 50%;
