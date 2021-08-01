@@ -141,6 +141,11 @@ p {
 }
 
 /* My UX Skills Section coded using CSS Flex */
+.mySkills {
+    background-color: #1A6978;
+    padding: 20px;
+}
+
 .mySkills h1 {
     text-align: center;
     color: whitesmoke;
