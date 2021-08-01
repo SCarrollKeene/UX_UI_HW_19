@@ -108,9 +108,19 @@ li a:hover:not(.active) {
     width: 50%;
   }
 
-h1 {
+h1, h3 {
     text-decoration: underline solid #8bd8bd;
     animation: dropIn 1s ease-in-out;
+}
+
+h3 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+h4 {
+    color: white;
+    text-decoration: underline solid white;
 }
 
 p {
@@ -179,10 +189,61 @@ p {
     outline: .3rem solid #7bccb0;
 }
 
+/* My Work Section coded using CSS Grid */
+.myWork {
+    background-color: #124451;
+    padding: 20px;
+}
+
 .myWork h1 {
     text-align: center;
     color: whitesmoke;
 }
+
+.workGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 20px;
+    margin-bottom: 10px;
+    grid-template-areas: 
+    'imageOne contentOne'
+    'imageTwo contentTwo';
+}
+
+.workGrid img {
+    width: 300px;
+    height: 200px;
+}
+
+.workGrid p {
+    line-height: 1.5rem;
+    color: whitesmoke;
+}
+
+.workImageOne {
+    grid-area: imageOne;
+    display: grid;
+    justify-self: center;
+    align-items: center;
+}
+
+.workContentOne {
+    grid-area: contentOne;
+}
+
+.workImageTwo {
+    grid-area: imageTwo;
+    display: grid;
+    justify-self: center;
+    align-items: center;
+}
+
+.workContentTwo {
+    grid-area: contentTwo;
+}
+
 
 /* Footer */
 footer {
