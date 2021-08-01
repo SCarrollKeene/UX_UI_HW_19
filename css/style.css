@@ -273,6 +273,60 @@ li, p {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Media Queries*/
+@media only screen and (max-width: 600px) {
+    .heroImg {
+        margin: 0%;
+    }
+
+    .content {
+        display: flex;
+        width: 20%;
+        font-size: 16px;
+        line-height: 1rem;
+    }
+
+    .button {
+        display: flex;
+        align-self: center;
+    }
+
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .workGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 310px 370px 390px 115px 90px;
+        grid-template-areas: 
+        'imageOne' 
+        'contentOne'
+        'imageTwo' 
+        'contentTwo';
+    }
+
+    .myWork p {
+        display: flex;
+        width: 20%;
+    }
+
+    .workContentOne,
+    .workContentTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .myWork h3 {
+        display: none;
+    }
+}
+
 /* Animations */
 @keyframes dropIn {
     0% {
