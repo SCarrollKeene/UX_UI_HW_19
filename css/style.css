@@ -86,6 +86,7 @@ li a:hover:not(.active) {
     margin: 0 auto;
     padding: 35px;
     color: whitesmoke;
+    line-height: 1.5rem;
 }
 
 .content img {
@@ -137,6 +138,45 @@ p {
     border: 1px solid #373738;
     color: #373738;
     transform: scale(2);
+}
+
+/* My UX Skills Section coded using CSS Flex */
+.mySkills h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.flexContainer {
+    display: flex;
+}
+
+.flexContainer div {
+    width: 33%;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexContainer img {
+    width: 250px;
+    height: 200px;
+
+    box-shadow: 8px 8px 8px 4px rgba(0, 0, 0, 0.2);
+    transition: transform .3s;
+    outline-offset: 1rem;
+}
+
+.flexContainer img:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+    outline: .3rem solid #7bccb0;
+}
+
+.myWork h1 {
+    text-align: center;
+    color: whitesmoke;
 }
 
 /* Footer */
