@@ -148,6 +148,7 @@ p {
     border: 1px solid #373738;
     color: #373738;
     transform: scale(2);
+    cursor: pointer;
 }
 
 /* My UX Skills Section coded using CSS Flex */
@@ -215,6 +216,7 @@ p {
 .workGrid img {
     width: 300px;
     height: 200px;
+    box-shadow: 8px 8px 8px 4px rgba(0, 0, 0, 0.2);
 }
 
 .workGrid p {
