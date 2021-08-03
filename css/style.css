@@ -87,7 +87,7 @@ li a:hover:not(.active) {
     flex-direction: column;
     justify-content: center;
     height: 700px;
-    width: 98%; /* was originally 500px per HW17, but I wanted the img to stretch wider */
+    width: 70%; /* fix 8/3/21 */
     margin: 0 auto;
     padding: 35px;
     color: whitesmoke;
