@@ -251,7 +251,7 @@ p {
 footer {
     display: flex;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
     background-color: #373738;
     text-align: center;
 }
@@ -352,6 +352,11 @@ li, p {
         'contentTwo';
     }
 
+    .myWork {
+        display: flex;
+        flex-direction: column;
+    }
+
     .myWork p {
         display: flex;
         width: 20%;
@@ -367,6 +372,10 @@ li, p {
 
     .myWork h3 {
         display: none;
+    }
+
+    footer ul {
+        display: flex;
     }
 }
 
