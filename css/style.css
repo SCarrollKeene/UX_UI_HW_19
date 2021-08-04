@@ -37,7 +37,7 @@ body {
 }
 
 nav {
-    width: 78%;
+    width: 78%; /* TODO: Fix width issue when scaled to mobile 8/3/21 */
     padding: 1%;
 }
 
@@ -169,6 +169,7 @@ p {
 
 .flexContainer {
     display: flex;
+    justify-content: center;
 }
 
 .flexContainer div {
@@ -281,6 +282,16 @@ li, p {
 }
 
 /* Media Queries*/
+@media only screen and (max-width: 1024px) {
+    .flexContainer img {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+
+}
+
 @media only screen and (max-width: 600px) {
    
     .inline-block {
@@ -378,6 +389,24 @@ li, p {
 
     footer ul {
         display: flex;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .heroImg {
+        padding-top: 3rem;
+    }
+
+    .content {
+        width: 60%;
+    }
+
+    .workGrid {
+        grid-template-rows: 300px;
+    }
+
+    .myWork p {
+        width: 80%;
     }
 }
 
