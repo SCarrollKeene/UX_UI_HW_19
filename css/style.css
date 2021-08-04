@@ -145,9 +145,11 @@ p {
 }
 
 /* Button Styling */
+.CKR {
+    text-decoration: none;
+}
 .button {
-    display: flex;
-    align-self: start;
+    
     background-color: #8bd8bd;
     border: 1px solid whitesmoke;
     padding: 5px 10px;
@@ -446,7 +448,7 @@ li, p {
         margin-bottom: 20px;
     }
 
-    .button {
+    .CKR {
         display: flex;
         align-self: center;
     }
