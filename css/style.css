@@ -124,7 +124,7 @@ h1, h3 {
     animation: dropIn 1s ease-in-out;
 }
 
-h3 {
+h1, h3 {
     text-align: center;
     color: whitesmoke;
 }
@@ -264,6 +264,7 @@ p {
 .workContentTwo {
     grid-area: contentTwo;
 }
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -281,6 +282,7 @@ p {
 
 .contact a {
     color: whitesmoke;
+    font-size: 1.1rem;
 }
 
 
