@@ -327,6 +327,36 @@ li, p {
 
 @media only screen and (max-width: 840px) {
 
+    .inline-block {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+
+    li a.active {
+        background-color: #373738;
+    }
+
+    .button {
+        align-self: center;
+    }
+
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer ul {
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 600px) {
