@@ -305,6 +305,7 @@ li, p {
     }
 
     ul {
+        width: 98%;
         display: flex;
         align-items: center;
         justify-content: center;
