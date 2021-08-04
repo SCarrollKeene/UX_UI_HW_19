@@ -276,6 +276,43 @@ footer li a {
 
 }
 
+.fa {
+  margin-left: 2px;
+  padding: 1rem;
+  width: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.fab {
+  margin-left: 2px;
+  padding: 1rem;
+  width: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.fa:hover {
+  color: #7bccb0;
+  text-decoration: none;
+  transform: translateY(-3px);
+}
+
+.fab:hover {
+  color: #7bccb0;
+  text-decoration: none;
+  transform: translateY(-3px);
+}
+
+.fa,
+.fab:active {
+  transform: translateY(-1px);
+}
+
 /* Typography */
 li, p {
     font-family: 'Roboto', sans-serif;
@@ -388,8 +425,23 @@ li, p {
         display: none;
     }
 
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
     footer ul {
         display: flex;
+    }
+
+    footer h3 {
+        display: none;
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
