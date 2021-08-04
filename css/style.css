@@ -264,6 +264,23 @@ p {
 .workContentTwo {
     grid-area: contentTwo;
 }
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.myEmail {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.contact a {
+    color: whitesmoke;
+}
 
 
 /* Footer */
