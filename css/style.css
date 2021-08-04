@@ -134,6 +134,10 @@ p {
     border-bottom: 3px solid #8bd8bd;
 }
 
+::selection {
+    background-color: #8bd8bd70;
+}
+
 /* Button Styling */
 .button {
     display: flex;
