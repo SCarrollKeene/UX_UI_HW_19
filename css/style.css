@@ -135,6 +135,7 @@ h4 {
 }
 
 p {
+    margin: 0 0 2rem 0;
     padding-bottom: 14px;
     line-height: 1.1rem;
     border-bottom: 3px solid #8bd8bd;
@@ -515,12 +516,8 @@ li, p {
 
 /* 25.875em */
 @media only screen and (max-width: 414px) {
-    .heroImg {
-        padding-top: 3rem;
-    }
-
     .content {
-        width: 60%;
+        width: 80%;
     }
 
     .workGrid {
