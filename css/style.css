@@ -4,6 +4,9 @@
 * convert font sizes/widths/margins/paddings to rem 
 * CSS global reset styline and edits that will come with that
 */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background: linear-gradient(to right, #1A6978, 50%, #124451);
