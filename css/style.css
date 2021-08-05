@@ -427,6 +427,7 @@ li, p {
     }
 
     .heroImg {
+        background-image: url(../images/content-background-min.jpg);
         max-width: 100%;
         margin: 0%;
         display: flex;
