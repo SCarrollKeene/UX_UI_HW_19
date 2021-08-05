@@ -275,6 +275,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 300px;
     background-color: #1A6978;
 }
 
@@ -299,6 +300,7 @@ footer {
     align-items: center;
     background-color: #373738;
     text-align: center;
+    height: 250px;
 }
 
 footer ul {
