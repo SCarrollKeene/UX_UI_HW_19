@@ -168,6 +168,7 @@ p {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
+    letter-spacing: 1.25px;
     transition: 0.3s;
 }
 
@@ -175,7 +176,7 @@ p {
     background-color: #7bccb0;
     border: 1px solid #373738;
     color: #373738;
-    transform: scale(2);
+    transform: scale(1.2);
     cursor: pointer;
 }
 
