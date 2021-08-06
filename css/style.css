@@ -91,6 +91,12 @@ li a:hover:not(.active) {
     margin: 20px 0 20px 0;
 }
 
+.heroImg > p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -433,6 +439,7 @@ li, p {
 
     .heroImg {
         background-image: url(../images/content-background-min.jpg);
+        background-attachment: scroll;
         max-width: 100%;
         margin: 0%;
         display: flex;
