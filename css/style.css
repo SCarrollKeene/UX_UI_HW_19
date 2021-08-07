@@ -561,8 +561,8 @@ li, p {
     }
 
     .workGrid img {
-        height: 260px;
-        width: 400px;
+        height: 250px;
+        max-width: 100%;
     }
 
     .workContentOne,
