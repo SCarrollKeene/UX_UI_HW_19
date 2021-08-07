@@ -81,7 +81,9 @@ li a:hover:not(.active) {
 .heroImg {
     display: flex;
     flex-direction: column;
-    background-image: url(../images/content-background.jpg);
+    background-image: linear-gradient(to bottom, #373738, #7bccb0),
+    url(../images/content-background.jpg);
+    background-blend-mode: darken;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -500,7 +502,8 @@ li, p {
     }
 
     .heroImg {
-        background-image: url(../images/content-background-min.jpg);
+        background-image: linear-gradient(to bottom, #373738, #7bccb0),
+        url(../images/content-background-min.jpg);
         background-attachment: scroll;
         max-width: 100%;
         margin: 0%;
