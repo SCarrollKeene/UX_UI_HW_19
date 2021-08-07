@@ -190,6 +190,7 @@ p {
 .mySkills h1 {
     text-align: center;
     color: whitesmoke;
+    font-size: 30px;
 }
 
 .flexContainer {
@@ -331,6 +332,12 @@ p {
     background-color: #1A6978;
 }
 
+.contact h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
 .myEmail {
     display: flex;
     align-items: center;
@@ -413,15 +420,15 @@ li, p {
 
 /* TODO: conver px to em */
 
-/* 64em */
-@media only screen and (max-width: 1024px) {
+/* 1024px */
+@media only screen and (max-width: 64em) {
     .flexContainer img {
         width: 250px;
     }
 }
 
-/* 52.5em */
-@media only screen and (max-width: 840px) {
+/* 840px */
+@media only screen and (max-width: 52.5em) {
 
     .inline-block {
         display: flex;
@@ -455,8 +462,8 @@ li, p {
     }
 }
 
-/* 37.5em */
-@media only screen and (max-width: 600px) {
+/* 600px */
+@media only screen and (max-width: 37.5em) {
    
     .inline-block {
         display: flex;
@@ -518,6 +525,10 @@ li, p {
         flex-direction: column;
     }
 
+    .mySkills h1 {
+        font-size: 24px;
+    }
+
     .flexContainer {
         display: flex;
         flex-direction: column;
@@ -558,6 +569,14 @@ li, p {
         font-size: 24px;
     }
 
+    .myWork h2 {
+        font-size: 20px;
+    }
+
+    .contact h1 {
+        font-size: 24px;
+    }
+
     footer {
         display: flex;
         flex-direction: column;
@@ -578,8 +597,8 @@ li, p {
     }
 }
 
-/* 25.875em */
-@media only screen and (max-width: 414px) {
+/* 414px */
+@media only screen and (max-width: 25.875em) {
     .content {
         width: 80%;
     }
