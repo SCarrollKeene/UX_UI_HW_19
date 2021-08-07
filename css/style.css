@@ -311,6 +311,7 @@ p {
 
 .workContentOne {
     grid-area: contentOne;
+    padding: 20px;
 }
 
 .workImageTwo {
@@ -322,6 +323,7 @@ p {
 
 .workContentTwo {
     grid-area: contentTwo;
+    padding: 20px;
 }
 
 .contact {
@@ -544,7 +546,7 @@ li, p {
     .workGrid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 310px 370px 390px 115px 90px;
+        grid-template-rows: repeat(1, 1fr);
         grid-template-areas: 
         'imageOne' 
         'contentOne'
@@ -552,9 +554,15 @@ li, p {
         'contentTwo';
     }
 
+
     .myWork p {
         display: flex;
-        width: 50%;
+        width: 93%;
+    }
+
+    .workGrid img {
+        height: 260px;
+        width: 400px;
     }
 
     .workContentOne,
