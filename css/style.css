@@ -515,6 +515,11 @@ li, p {
         align-items: center;
     }
 
+    #btnTop:hover {
+        background-color: #7bccb0;
+        border: 1px solid #7bccb0;
+    }
+
     .workGrid {
         display: grid;
         grid-template-columns: 1fr;
