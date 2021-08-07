@@ -160,7 +160,6 @@ p {
 }
 
 .button {
-    
     background-color: #8bd8bd;
     border: 1px solid whitesmoke;
     padding: 5px 10px;
@@ -478,7 +477,7 @@ li, p {
     }
 
     ul {
-        width: 98%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -592,6 +591,7 @@ li, p {
 
     footer ul {
         display: flex;
+        padding: 0;
     }
 
     footer h3 {
