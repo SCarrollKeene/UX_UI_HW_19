@@ -109,6 +109,14 @@ li a:hover:not(.active) {
     line-height: 1.5rem;
 }
 
+.content h1 {
+    font-size: 30px;
+}
+
+.content p {
+    font-size: 18px;
+}
+
 .content img {
     width: 200px;
     height: auto;
@@ -146,7 +154,7 @@ h4 {
 p {
     margin: 0 0 2rem 0;
     padding-bottom: 14px;
-    line-height: 1.1rem;
+    line-height: 1.4rem;
     border-bottom: 3px solid #8bd8bd;
 }
 
@@ -514,6 +522,10 @@ li, p {
     .content img {
         max-width: 100%;
         margin-bottom: 20px;
+    }
+
+    .content p {
+        font-size: 15px;
     }
 
     .CKR {
