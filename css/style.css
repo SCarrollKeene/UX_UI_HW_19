@@ -1,8 +1,6 @@
 /* TODO 
-* Convert all colors into :root variables
 * Implement html font size 62.5% for better responsive design
-* convert font sizes/widths/margins/paddings to rem 
-* CSS global reset styline and edits that will come with that
+* convert font sizes/widths/margins/paddings to rem
 */
 
 :root {
@@ -608,6 +606,7 @@ li, p {
         display: flex;
         flex-direction: column;
         row-gap: 2rem;
+        height: 400px;
     }
 
     footer ul {
