@@ -216,36 +216,6 @@ p {
     cursor: pointer;
 }
 
-.flexContainer {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-.flexContainer div {
-    width: 33%;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-}
-
-.flexContainer img {
-    width: 300px;
-    height: 200px;
-
-    box-shadow: 8px 8px 8px 4px rgba(0, 0, 0, 0.2);
-    transition: transform .3s;
-    outline-offset: 1rem;
-}
-
-.flexContainer img:hover {
-    transform: translateY(-1.5rem) scale(1.03);
-    outline: .3rem solid var(--color-hover-grn);
-}
-
 /* Back to Top btn */
 .scroll-btn {
     background-color: var(--color-hover-grn); 
@@ -470,9 +440,7 @@ li, p {
 
 /* 1024px */
 @media only screen and (max-width: 64em) {
-    .flexContainer img {
-        width: 250px;
-    }
+
 }
 
 /* 840px */
@@ -496,13 +464,6 @@ li, p {
 
     .button {
         align-self: center;
-    }
-
-    .flexContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     footer ul {
@@ -571,13 +532,6 @@ li, p {
     .CKR {
         display: flex;
         align-self: center;
-    }
-
-    .flexContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     #btnTop:hover {
