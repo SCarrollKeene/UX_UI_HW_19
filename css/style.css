@@ -15,11 +15,17 @@
     --color-secondary: #1A6978;
     --color-tertiary: #124451;
 
-    --color-navbar: #373738;
-    --color-selection: #8bd8bd70;
+    --color-light-blk: #373738;
+    --color-blk-two: #222222;
 
-    --color-white: #ffffff;
-    --color-whitesmoke: #f5f5f5;
+    --color-bs-one: rgba(0, 0, 0, 0.1);
+    --color-bs-two: rgba(0, 0, 0, 0.2);
+
+    --color-selection: #8bd8bd70;
+    --color-hover-grn: #7bccb0;
+
+    --color-wht: #ffffff;
+    --color-wht-smoke: #f5f5f5;
 }
 
 html {
@@ -27,7 +33,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to right, #1A6978, 50%, #124451);
+    background: linear-gradient(to right, var(--color-secondary), 50%, var(--color-tertiary));
     width: 100%;
     height: 800px;
     margin: 0 auto;
@@ -37,7 +43,7 @@ body {
 
 /* Navbar */
 .navigation {
-    background-color: #373738;
+    background-color: var(--color-light-blk);
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -57,7 +63,7 @@ body {
     width: 18%;
     padding: 2%;
     text-align: center;
-    border-right: 2px solid #8bd8bd;
+    border-right: 2px solid var(--color-primary);
 }
 
 .headerLogo {
@@ -80,26 +86,26 @@ ul {
 }
 
 li a {
-    color: #8bd8bd;
+    color: var(--color-primary);
     text-decoration: none;
     padding: 14px 16px;
     transition: background-color 0.3s ease;
 }
 
 li a:hover:not(.active) {
-    background-color: #222;
-    color: whitesmoke;
+    background-color: var(--color-blk-two);
+    color: var(--color-wht-smoke);
 }
 
 .active {
-    background-color: whitesmoke;
+    background-color: var(--color-wht-smoke);
 }
 
 /* Hero Image */
 .heroImg {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, #373738, #7bccb0),
+    background-image: linear-gradient(to bottom, var(--color-light-blk), var(--color-hover-grn)),
     url(../images/content-background.jpg);
     background-blend-mode: darken;
     background-position: center center;
@@ -125,7 +131,7 @@ li a:hover:not(.active) {
     width: 70%;
     margin: 0 auto;
     padding: 35px;
-    color: whitesmoke;
+    color: var(--color-wht-smoke);
     line-height: 1.5rem;
 }
 
@@ -140,7 +146,7 @@ li a:hover:not(.active) {
 .content img {
     width: 200px;
     height: auto;
-    border: 3px solid whitesmoke;
+    border: 3px solid var(--color-wht-smoke);
     border-radius: 50%;
 }
 
@@ -159,29 +165,29 @@ li a:hover:not(.active) {
 h1, h3 {
     font-family: var(--font-header);
     font-weight: 300;
-    text-decoration: underline solid #8bd8bd;
+    text-decoration: underline solid var(--color-primary);
     animation: dropIn 1s ease-in-out;
 }
 
 h1, h3 {
     text-align: center;
-    color: whitesmoke;
+    color: var(--color-wht-smoke);
 }
 
 h4 {
-    color: white;
-    text-decoration: underline solid white;
+    color: var(--color-wht);
+    text-decoration: underline solid var(--color-wht);
 }
 
 p {
     margin: 0 0 2rem 0;
     padding-bottom: 14px;
     line-height: 1.6rem;
-    border-bottom: 3px solid #8bd8bd;
+    border-bottom: 3px solid var(--color-primary)
 }
 
 ::selection {
-    background-color: #8bd8bd70;
+    background-color: var(--color-selection);
 }
 
 /* Button Styling */
@@ -190,11 +196,11 @@ p {
 }
 
 .button {
-    background-color: #8bd8bd;
-    border: 1px solid whitesmoke;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-wht-smoke);
     padding: 10px 10px;
     display: inline-block;
-    color: whitesmoke;
+    color: var(--color-wht-smoke);
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -203,9 +209,9 @@ p {
 }
 
 .button:hover {
-    background-color: #7bccb0;
-    border: 1px solid #373738;
-    color: #373738;
+    background-color: var(--color-hover-grn);
+    border: 1px solid var(--color-light-blk);
+    color: var(--color-light-blk);
     transform: scale(1.2);
     cursor: pointer;
 }
@@ -237,12 +243,12 @@ p {
 
 .flexContainer img:hover {
     transform: translateY(-1.5rem) scale(1.03);
-    outline: .3rem solid #7bccb0;
+    outline: .3rem solid var(--color-hover-grn);
 }
 
 /* Back to Top btn */
 .scroll-btn {
-    background-color: #7bccb0; 
+    background-color: var(--color-hover-grn); 
     height: 4rem;
     width: 4rem;
     position: fixed;
@@ -261,14 +267,14 @@ p {
 }
 
 .scroll-btn:hover {
-    background-color: #124451;
-    border: 1px solid #7bccb0;
+    background-color: var(--color-tertiary);
+    border: 1px solid var(--color-hover-grn);
 }
 
 .scroll-btn-icon,
 .scroll-btn-icon::before,
 .scroll-btn-icon::after {
-    color: white;
+    color: var(--color-wht);
     font-size: 18px;
 }
 
@@ -276,18 +282,18 @@ p {
 .myWork {
     display: flex;
     flex-direction: column;
-    background-color: #124451;
+    background-color: var(--color-tertiary);
     padding: 20px;
 }
 
 .myWork h1 {
     text-align: center;
-    color: whitesmoke;
+    color: var(--color-wht-smoke);
     font-size: 30px;
 }
 
 .myWork h2 {
-    color: whitesmoke;
+    color: var(--color-wht-smoke);
 }
 
 .myWork > p {
@@ -317,7 +323,7 @@ p {
 
 .workGrid p {
     line-height: 1.5rem;
-    color: whitesmoke;
+    color: var(--color-wht-smoke);
 }
 
 .workImageOne {
@@ -373,12 +379,12 @@ p {
     flex-direction: column;
     justify-content: center;
     height: 300px;
-    background-color: #1A6978;
+    background-color: var(--color-secondary);
 }
 
 .contact h1 {
     text-align: center;
-    color: whitesmoke;
+    color: var(--color-wht-smoke);
     font-size: 30px;
 }
 
@@ -391,7 +397,7 @@ p {
 }
 
 .contact a {
-    color: whitesmoke;
+    color: var(--color-wht-smoke);
     font-size: 1.1rem;
 }
 
@@ -401,7 +407,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #373738;
+    background-color: var(--color-light-blk);
     text-align: center;
     height: 250px;
 }
@@ -410,7 +416,7 @@ footer ul {
     display: inline-block;
     vertical-align: top;
     padding: 3%;
-    color: #7bccb0
+    color: var(--color-hover-grn);
 }
 
 footer li a {
@@ -425,7 +431,7 @@ footer li a {
   font-size: 3rem;
   text-align: center;
   text-decoration: none;
-  color: whitesmoke;
+  color: var(--color-wht-smoke);
 }
 
 .fab {
@@ -435,17 +441,17 @@ footer li a {
   font-size: 2rem;
   text-align: center;
   text-decoration: none;
-  color: whitesmoke;
+  color: var(--color-wht-smoke);
 }
 
 .fa:hover {
-  color: #7bccb0;
+  color: var(--color-hover-grn);
   text-decoration: none;
   transform: translateY(-3px);
 }
 
 .fab:hover {
-  color: #7bccb0;
+  color: var(--color-hover-grn);
   text-decoration: none;
   transform: translateY(-3px);
 }
@@ -457,7 +463,7 @@ footer li a {
 
 /* Typography */
 li, p {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-body);
 }
 
 /* Media Queries*/
@@ -485,7 +491,7 @@ li, p {
     }
 
     li a.active {
-        background-color: #373738;
+        background-color: var(--color-light-blk);
     }
 
     .button {
@@ -529,11 +535,11 @@ li, p {
     }
 
     li a.active {
-        background-color: #373738;
+        background-color: var(--color-light-blk);
     }
 
     .heroImg {
-        background-image: linear-gradient(to bottom, #373738, #7bccb0),
+        background-image: linear-gradient(to bottom, var(--color-light-blk), var(--color-hover-grn)),
         url(../images/content-background-min.jpg);
         background-attachment: scroll;
         max-width: 100%;
@@ -575,8 +581,8 @@ li, p {
     }
 
     #btnTop:hover {
-        background-color: #7bccb0;
-        border: 1px solid #7bccb0;
+        background-color: var(--color-hover-grn);
+        border: 1px solid var(--color-hover-grn);
     }
 
     .workGrid {
