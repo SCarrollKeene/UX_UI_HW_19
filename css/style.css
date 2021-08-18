@@ -297,7 +297,8 @@ p {
     margin: 20px;
     grid-template-areas: 
     'imageOne contentOne'
-    'imageTwo contentTwo';
+    'imageTwo contentTwo'
+    'imageThree contentThree';
 }
 
 .workGrid img {
@@ -332,6 +333,18 @@ p {
 
 .workContentTwo {
     grid-area: contentTwo;
+    padding: 20px;
+}
+
+.workImageThree {
+    grid-area: imageThree;
+    display: grid;
+    justify-self: center;
+    align-items: center;
+}
+
+.workContentThree {
+    grid-area: contentThree;
     padding: 20px;
 }
 
@@ -558,6 +571,8 @@ li, p {
     }
 
     .workGrid {
+        padding: 10px;
+        margin: 10px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1, 1fr);
@@ -565,7 +580,9 @@ li, p {
         'imageOne' 
         'contentOne'
         'imageTwo' 
-        'contentTwo';
+        'contentTwo'
+        'imageThree'
+        'contentThree';
     }
 
 
@@ -580,7 +597,8 @@ li, p {
     }
 
     .workContentOne,
-    .workContentTwo {
+    .workContentTwo,
+    .workContentThree {
         display: flex;
         flex-direction: column;
         justify-content: center;
