@@ -4,6 +4,24 @@
 * convert font sizes/widths/margins/paddings to rem 
 * CSS global reset styline and edits that will come with that
 */
+
+:root {
+    /* Fonts */
+    --font-header: 'Space Grotesk', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+
+    /* Colors */
+    --color-primary: #8bd8bd;
+    --color-secondary: #1A6978;
+    --color-tertiary: #124451;
+
+    --color-navbar: #373738;
+    --color-selection: #8bd8bd70;
+
+    --color-white: #ffffff;
+    --color-whitesmoke: #f5f5f5;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -116,7 +134,7 @@ li a:hover:not(.active) {
 }
 
 .content p {
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .content img {
@@ -139,6 +157,8 @@ li a:hover:not(.active) {
   }
 
 h1, h3 {
+    font-family: var(--font-header);
+    font-weight: 300;
     text-decoration: underline solid #8bd8bd;
     animation: dropIn 1s ease-in-out;
 }
@@ -156,7 +176,7 @@ h4 {
 p {
     margin: 0 0 2rem 0;
     padding-bottom: 14px;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
     border-bottom: 3px solid #8bd8bd;
 }
 
