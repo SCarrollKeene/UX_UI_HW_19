@@ -307,6 +307,10 @@ p {
     align-items: center;
 }
 
+.workImageOne:hover {
+    filter: grayscale(100%);
+}
+
 .workContentOne {
     grid-area: contentOne;
     padding: 20px;
@@ -319,6 +323,10 @@ p {
     align-items: center;
 }
 
+.workImageTwo:hover {
+    filter: grayscale(100%);
+}
+
 .workContentTwo {
     grid-area: contentTwo;
     padding: 20px;
@@ -329,6 +337,10 @@ p {
     display: grid;
     justify-self: center;
     align-items: center;
+}
+
+.workImageThree:hover {
+    filter: grayscale(100%);
 }
 
 .workContentThree {
@@ -571,6 +583,18 @@ li, p {
     .workGrid img {
         height: 250px;
         max-width: 100%;
+    }
+
+    .workImageOne:hover {
+        filter: none;
+    }
+
+    .workImageTwo:hover {
+        filter: none;
+    }
+
+    .workImageThree:hover {
+        filter: none;
     }
 
     .workContentOne,
