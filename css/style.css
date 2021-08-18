@@ -10,6 +10,12 @@
     --font-header: 'Space Grotesk', sans-serif;
     --font-body: 'Roboto', sans-serif;
 
+    /* Font Size */
+    --ft-sz-16: 16px;
+    --ft-sz-24: 24px;
+
+    --ft-h-lg: 30px;
+
     /* Colors */
     --color-primary: #8bd8bd;
     --color-secondary: #1A6978;
@@ -136,11 +142,11 @@ li a:hover:not(.active) {
 }
 
 .content h1 {
-    font-size: 30px;
+    font-size: var(--ft-h-lg);
 }
 
 .content p {
-    font-size: 24px;
+    font-size: var(--ft-sz-24);
 }
 
 .content img {
@@ -203,7 +209,7 @@ p {
     color: var(--color-wht-smoke);
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: var(--ft-sz-16);
     letter-spacing: 1.25px;
     transition: 0.3s;
 }
@@ -259,7 +265,7 @@ p {
 .myWork h1 {
     text-align: center;
     color: var(--color-wht-smoke);
-    font-size: 30px;
+    font-size: var(--ft-h-lg);
 }
 
 .myWork h2 {
@@ -267,7 +273,7 @@ p {
 }
 
 .myWork > p {
-    font-size: 16px;
+    font-size: var(--ft-sz-16);
     font-weight: 400;
     letter-spacing: 0.5px;
 }
@@ -355,7 +361,7 @@ p {
 .contact h1 {
     text-align: center;
     color: var(--color-wht-smoke);
-    font-size: 30px;
+    font-size: var(--ft-h-lg);
 }
 
 .myEmail {
@@ -512,7 +518,7 @@ li, p {
     .content {
         display: flex;
         width: 50%;
-        font-size: 16px;
+        font-size: var(--ft-sz-16);
         line-height: 1rem;
     }
 
@@ -587,7 +593,7 @@ li, p {
     }
 
     .myWork h1 {
-        font-size: 24px;
+        font-size: var(--ft-sz-24);
     }
 
     .myWork h2 {
@@ -595,7 +601,7 @@ li, p {
     }
 
     .contact h1 {
-        font-size: 24px;
+        font-size: var(--ft-sz-24);
     }
 
     footer {
