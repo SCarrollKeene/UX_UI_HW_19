@@ -442,6 +442,21 @@ li, p {
 
 /* Media Queries*/
 
+@media only screen and (orientation: landscape) {
+    .heroImg {
+        background-attachment: scroll;
+        margin: 0;
+    }
+
+    .content p {
+        font-size: var(--ft-sz-16);
+    }
+
+    footer {
+        height: 400px;
+    }
+}
+
 /* 1024px */
 @media only screen and (max-width: 64em) {
 
