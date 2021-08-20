@@ -51,6 +51,7 @@ body {
     display: flex;
     justify-content: center;
     justify-items: center;
+    box-shadow: 0 -1.3rem 0.55rem 1.4rem rgb(0 0 0 / 50%);
 }
 
 .inline-block {
@@ -68,6 +69,18 @@ body {
     padding: 2%;
     text-align: center;
     border-right: 2px solid var(--color-primary);
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .heroImg {
+    padding-top: 60px;
 }
 
 .headerLogo {

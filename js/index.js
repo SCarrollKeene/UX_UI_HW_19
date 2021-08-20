@@ -22,7 +22,7 @@ $(document).ready(()=> {
    let buttonTop = document.getElementById("btnTop");
 
    // shoe btn When user scrolls down 20px from top of the document
-   window.onscroll = function() {scroll()};
+   window.onscroll = function() {stickyNav(), scroll()};
  
    function scroll() {
      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -37,3 +37,14 @@ $(document).ready(()=> {
      document.body.scrollTop = 0; // For Safari
      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
    }
+
+  let navbar = document.getElementById("navigation");
+  let sticky = navbar.offsetTop;
+
+  function stickyNav() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
