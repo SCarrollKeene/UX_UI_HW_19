@@ -383,7 +383,7 @@ footer {
     align-items: center;
     background-color: var(--color-light-blk);
     text-align: center;
-    height: 250px;
+    height: 300px;
 }
 
 footer ul {
@@ -445,15 +445,6 @@ li, p {
 @media only screen and (orientation: landscape) {
     .heroImg {
         background-attachment: scroll;
-        margin: 0;
-    }
-
-    .content p {
-        font-size: var(--ft-sz-16);
-    }
-
-    footer {
-        height: 400px;
     }
 }
 
