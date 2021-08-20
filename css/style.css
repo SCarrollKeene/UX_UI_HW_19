@@ -186,7 +186,7 @@ h4 {
 p {
     margin: 0 0 2rem 0;
     padding-bottom: 14px;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     border-bottom: 3px solid var(--color-primary)
 }
 
@@ -530,6 +530,7 @@ li, p {
     }
 
     .content p {
+        line-height: 1.6rem;
         font-size: 15px;
     }
 
