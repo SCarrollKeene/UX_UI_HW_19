@@ -284,6 +284,7 @@ p {
     padding: 20px;
     margin: 20px;
     grid-template-areas: 
+    'imageFour contentFour'
     'imageOne contentOne'
     'imageTwo contentTwo'
     'imageThree contentThree';
@@ -345,6 +346,22 @@ p {
 
 .workContentThree {
     grid-area: contentThree;
+    padding: 20px;
+}
+
+.workImageFour {
+    grid-area: imageFour;
+    display: grid;
+    justify-self: center;
+    align-items: center;
+}
+
+.workImageFour:hover {
+    filter: grayscale(100%);
+}
+
+.workContentFour {
+    grid-area: contentFour;
     padding: 20px;
 }
 
