@@ -212,6 +212,7 @@ p {
     text-decoration: none;
     font-size: var(--ft-sz-16);
     letter-spacing: 2.25px;
+    cursor: pointer;
 }
 
 /* Back to Top btn */
