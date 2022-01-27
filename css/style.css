@@ -467,10 +467,20 @@ li, p {
 /* 1024px */
 @media only screen and (max-width: 64em) {
 
+    .content h1 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
 }
 
 /* 840px */
 @media only screen and (max-width: 52.5em) {
+
+    .content h1 {
+        font-size: 28px;
+        font-weight: 500;
+    }
 
     .inline-block {
         display: flex;
@@ -501,6 +511,11 @@ li, p {
 @media only screen and (max-width: 48em) {
     .content {
         height: 830px;
+    }
+
+    .content h1 {
+        font-size: 26px;
+        font-weight: 500;
     }
 }
 
@@ -550,7 +565,8 @@ li, p {
     }
 
     .content h1 {
-        display: none;
+        font-size: 20px;
+        font-weight: 500;
     }
 
     .content img {
@@ -659,20 +675,5 @@ li, p {
 
     .myWork p {
         width: 80%;
-    }
-}
-
-/* Animations */
-@keyframes dropIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-10rem);
-    }
-    80% {
-        transform: translateY(1rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
     }
 }
