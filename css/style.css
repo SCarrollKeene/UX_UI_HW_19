@@ -30,6 +30,7 @@
     --color-khaki: #C8B692;
     --color-grullo: #B09E7A;
     --color-beaver: #A17B66;
+    --color-beaver-drk: #856453;
 
     --color-selection: #d8c08b70;
     --color-btn-hover: #b3917f;
@@ -202,8 +203,8 @@ p {
 }
 
 .button {
-    background-color: var(--color-beaver);
-    border: 1px solid var(--color-beaver);
+    background-color: var(--color-beaver-drk);
+    border: 1px solid var(--color-beaver-drk);
     border-radius: 25px;
     padding: 15px 20px;
     display: inline-block;
@@ -217,6 +218,7 @@ p {
 .button:hover {
     cursor: pointer;
     background-color: var(--color-btn-hover);
+    border: 1px solid var(--color-btn-hover);
 }
 
 /* Back to Top btn */
