@@ -284,15 +284,13 @@ p {
     padding: 20px;
     margin: 20px;
     grid-template-areas: 
-    'imageFour contentFour'
-    'imageOne contentOne'
-    'imageTwo contentTwo'
-    'imageThree contentThree';
+    'imageFour imageTwo'
+    'imageOne imageThree';
 }
 
 .workGrid img {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     box-shadow: 8px 8px 8px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -315,11 +313,6 @@ p {
     transform: scale(1.1);
 }
 
-.workContentOne {
-    grid-area: contentOne;
-    padding: 20px;
-}
-
 .workImageTwo {
     grid-area: imageTwo;
     display: grid;
@@ -332,11 +325,6 @@ p {
 .workImageTwo:hover {
     filter: grayscale(100%);
     transform: scale(1.1);
-}
-
-.workContentTwo {
-    grid-area: contentTwo;
-    padding: 20px;
 }
 
 .workImageThree {
@@ -353,11 +341,6 @@ p {
     transform: scale(1.1);
 }
 
-.workContentThree {
-    grid-area: contentThree;
-    padding: 20px;
-}
-
 .workImageFour {
     grid-area: imageFour;
     display: grid;
@@ -370,11 +353,6 @@ p {
 .workImageFour:hover {
     filter: grayscale(100%);
     transform: scale(1.1);
-}
-
-.workContentFour {
-    grid-area: contentFour;
-    padding: 20px;
 }
 
 .contact {
@@ -462,6 +440,10 @@ footer li a {
 .fa,
 .fab:active {
   transform: translateY(-1px);
+}
+
+.center {
+    text-align: center;
 }
 
 /* Typography */
@@ -594,13 +576,9 @@ li, p {
         grid-template-rows: repeat(1, 1fr);
         grid-template-areas: 
         'imageFour'
-        'contentFour'
         'imageOne' 
-        'contentOne'
         'imageTwo' 
-        'contentTwo'
-        'imageThree'
-        'contentThree';
+        'imageThree';
     }
 
 
@@ -627,16 +605,6 @@ li, p {
     }
     .workImageFour:hover {
         filter: none;
-    }
-
-    .workContentOne,
-    .workContentTwo,
-    .workContentThree,
-    .workContentFour {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     .myWork h1 {
