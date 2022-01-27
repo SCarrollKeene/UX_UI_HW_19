@@ -212,7 +212,11 @@ p {
     text-decoration: none;
     font-size: var(--ft-sz-16);
     letter-spacing: 2.25px;
+}
+
+.button:hover {
     cursor: pointer;
+    background-color: var(--color-btn-hover);
 }
 
 /* Back to Top btn */
