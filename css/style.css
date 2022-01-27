@@ -431,13 +431,13 @@ footer li a {
 }
 
 .fa:hover {
-  color: var(--color-hover-grn);
+  color: var(--color-btn-hover);
   text-decoration: none;
   transform: translateY(-3px);
 }
 
 .fab:hover {
-  color: var(--color-hover-grn);
+  color: var(--color-btn-hover);
   text-decoration: none;
   transform: translateY(-3px);
 }
