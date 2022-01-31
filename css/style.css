@@ -352,8 +352,9 @@ p {
 }
 
 .overlay-text {
-    color: var(--color-blk-one);
+    font-family: var(--font-body);
     font-size: 20px;
+    color: var(--color-blk-one);
     position: absolute;
     top: 50%;
     left: 50%;
