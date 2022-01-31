@@ -489,9 +489,7 @@ li, p {
 /* Media Queries*/
 
 @media only screen and (orientation: landscape) {
-    .heroImg {
-        margin: 0;;
-    }
+
 }
 
 /* 1024px */
