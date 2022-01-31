@@ -37,6 +37,7 @@
 
     --color-wht: #ffffff;
     --color-wht-smoke: #f5f5f5;
+    --color-wht-hover: #f5f5f5bb;
     --color-dutch-wht: #E6D5B9;
 }
 
@@ -292,7 +293,7 @@ p {
     'imageOne imageThree';
 }
 
-.workGrid img {
+.image {
     width: 500px;
     height: 400px;
     box-shadow: 8px 8px 8px 4px rgba(0, 0, 0, 0.2);
@@ -306,57 +307,76 @@ p {
 .workImageOne {
     grid-area: imageOne;
     display: grid;
+    position: relative;
     justify-self: center;
     align-items: center;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-}
-
-.workImageOne:hover {
-    filter: grayscale(100%);
-    transform: scale(1.1);
 }
 
 .workImageTwo {
     grid-area: imageTwo;
     display: grid;
+    position: relative;
     justify-self: center;
     align-items: center;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-}
-
-.workImageTwo:hover {
-    filter: grayscale(100%);
-    transform: scale(1.1);
 }
 
 .workImageThree {
     grid-area: imageThree;
     display: grid;
+    position: relative;
     justify-self: center;
     align-items: center;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-}
-
-.workImageThree:hover {
-    filter: grayscale(100%);
-    transform: scale(1.1);
 }
 
 .workImageFour {
     grid-area: imageFour;
     display: grid;
+    position: relative;
     justify-self: center;
     align-items: center;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
 }
 
-.workImageFour:hover {
-    filter: grayscale(100%);
-    transform: scale(1.1);
+.overlay-four,
+.overlay-three,
+.overlay-two,
+.overlay-one {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: 500px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.overlay-text {
+    color: var(--color-blk-one);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.workImageOne:hover .image,
+.workImageTwo:hover .image,
+.workImageThree:hover .image,
+.workImageFour:hover .image {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.workImageOne:hover .overlay-one, 
+.workImageTwo:hover .overlay-two, 
+.workImageThree:hover .overlay-three,
+.workImageFour:hover .overlay-four {
+    opacity: 1;
+    background-color: var(--color-wht-hover);
 }
 
 .contact {
