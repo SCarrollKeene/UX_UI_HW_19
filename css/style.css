@@ -467,7 +467,7 @@ li, p {
 
 @media only screen and (orientation: landscape) {
     .heroImg {
-        background-attachment: scroll;
+        margin: 0;;
     }
 }
 
