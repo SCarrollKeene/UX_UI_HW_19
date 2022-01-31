@@ -508,7 +508,7 @@ li, p {
 @media only screen and (max-width: 52.5em) {
 
     .content h1 {
-        font-size: 28px;
+        font-size: 32px;
         font-weight: 500;
     }
 
@@ -724,6 +724,10 @@ li, p {
 
     .workGrid {
         grid-template-rows: 300px;
+    }
+
+    .myWork {
+        padding: 10px;
     }
 
     .myWork p {
