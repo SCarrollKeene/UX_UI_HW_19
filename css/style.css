@@ -353,6 +353,7 @@ p {
 
 .overlay-text {
     font-family: var(--font-body);
+    font-weight: 400;
     font-size: 20px;
     color: var(--color-blk-one);
     position: absolute;
