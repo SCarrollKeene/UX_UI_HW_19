@@ -366,26 +366,6 @@ p {
     text-align: center;
 }
 
-.overlay-bottom-text {
-    display: none;
-}
-
-.overlay-desc-one {
-    grid-area: descOne;
-}
-
-.overlay-desc-two {
-    grid-area: descTwo;
-}
-
-.overlay-desc-three {
-    grid-area: descThree;
-}
-
-.overlay-desc-four {
-    grid-area: descFour;
-}
-
 .workImageOne:hover .image,
 .workImageTwo:hover .image,
 .workImageThree:hover .image,
@@ -559,18 +539,9 @@ li, p {
         margin: 20px;
         grid-template-areas: 
         'imageFour'
-        'descFour'
         'imageOne'
-        'descOne'
         'imageTwo'
-        'descTwo'
-        'imageThree'
-        'descThree';
-    }
-
-    /* TODO 1/31/22 FIX THIS BREAKING ALIGNMENT ON TABLET VIEW */
-    .overlay-bottom-text {
-        display: grid;
+        'imageThree';
     }
 
     footer ul {
@@ -587,20 +558,6 @@ li, p {
     .content h1 {
         font-size: 26px;
         font-weight: 500;
-    }
-
-    .workImageOne:hover .image,
-    .workImageTwo:hover .image,
-    .workImageThree:hover .image,
-    .workImageFour:hover .image {
-        filter: none;
-    }
-
-    .overlay-one,
-    .overlay-two,
-    .overlay-three,
-    .overlay-four  {
-        display: none;
     }
     
 }
@@ -691,13 +648,9 @@ li, p {
         grid-template-rows: repeat(1, 1fr);
         grid-template-areas: 
         'imageFour'
-        'descFour'
-        'imageOne'
-        'descOne'
-        'imageTwo'
-        'descTwo'
-        'imageThree'
-        'descThree';
+        'imageOne' 
+        'imageTwo' 
+        'imageThree';
     }
 
 
@@ -711,18 +664,19 @@ li, p {
         max-width: 100%;
     }
 
-    .workImageOne:hover .image,
-    .workImageTwo:hover .image,
-    .workImageThree:hover .image,
-    .workImageFour:hover .image {
+    .workImageOne:hover {
         filter: none;
     }
 
-    .overlay-one,
-    .overlay-two,
-    .overlay-three,
-    .overlay-four  {
-        display: none;
+    .workImageTwo:hover {
+        filter: none;
+    }
+
+    .workImageThree:hover {
+        filter: none;
+    }
+    .workImageFour:hover {
+        filter: none;
     }
 
     .myWork h1 {
