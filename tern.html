@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/tern.css">
+    <title>Tern Case Study</title>
+</head>
+<body>
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tern</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://stephencarrollkeene.com">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#research">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ideation">Ideation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#iteration">Iteration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#prototype">Prototype</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#conclusion">Conclusion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Introduction Jumbotron Section -->
+    <div class="jumbotron jumbotron-fluid ternBackground"> 
+      <h1 class="display-1">Tern Case Study</h1>
+      <h6 class="display-6">By Stephen Carroll-Keene</h6>
+    </div>
+
+    <div class="container ternCopy">
+      <div class="row">
+        <div class="container sectionOne col-sm-12 col-md-6 col-lg-3">
+          <h1 class="display-4">The Problem</h1>
+          <p class="lead">Users typically plan a trip to a desired destination, but they may not always have plans to fill the gaps inbetween their main activities, especially on longer trips</p>
+        </div>
+
+        <div class="container sectionTwo col-sm-12 col-md-6 col-lg-3">
+          <h1 class="display-4">The Solution</h1>
+          <p class="lead">Tern is a travel companion app that serves as a means to make both local food and activity recommendations to you based on where you’re located at</p>
+        </div>
+
+        <div class="container sectionThree col-sm-12 col-md-6 col-lg-3">
+          <h1 class="display-4">Role</h1>
+          <p class="lead">UX Designer</p>
+        </div>
+
+        <div class="container sectionFour col-sm-12 col-md-6 col-lg-3">
+          <h1 class="display-4">Duration</h1>
+          <p class="lead">3 Weeks</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Research Section -->
+    <section class="container-fluid" id="research">
+
+        <div class="row">
+            <div class="container researchContainer">
+              <h1 class="display-4">Research</h1>
+            </div>
+
+            <div class="container affinityContainer col-sm-12 col-lg-12  d-flex justify-content-center">
+              <h1>Affinity Diagram</h1>
+              <p class="lead">In condensing down ideas and figuring out what Tern was eventually going to be, I created an affinity diagram based on surveys I conducted with a number of friends and other participants. The goal of these interviews was to broadly figure out what people valued most when planning their travels.</p>
+              <img src="./images/affinity-diagram.jpg" alt="Affinity Diagram" class="affinityImg">
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="container travelContainer">
+            <div class="container">
+              <h1>Travel Survey</h1>
+              <p class="lead">Alongside conducting these user interviews, I created a travel survey using google forms to gather more information on users' travel habits, what they looked forward to when planning their travels and what resources they may have used to plan their entire travel itenerary.</p>
+            </div>
+  
+            <div class="container travelImgContainer">
+              <img src="./images/travel-survey.png" alt="Travel Survey" class="travelImg">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="container">
+            <h1 class="text-center">Travel Survey Data</h1>
+          </div>
+
+            <div class="survey-container">
+              <div class="container">
+                <h2>73%</h2>
+                <p class=>big on traveling</p>
+              </div>
+    
+              <div class="container">
+                <h2>56%</h2>
+                <p>traveled yearly</p>
+              </div>
+    
+              <div class="container">
+                <h2>67%</h2>
+                <p>traveled with company</p>
+              </div>
+    
+              <div class="container">
+                <h2>51%</h2>
+                <p>food was a priority</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <p class="lead">After conducting this google forms survey we've come to learn that there's at least a potential need and benefit for Tern. Of the 45 responses received we can conclude that a majority of potential users travel multiple times a year and that one of the biggest priorities in their travels is, you've guessed it, food.</p>
+          </div>
+         
+
+    </section>
+
+    <!-- Definition and Ideation Section -->
+    <section class="container-fluid" id="ideation">
+
+      <div class="row">
+        <div class="container ideationContainer">
+          <h1 class="display-4">Definiton and Ideation</h1>
+        </div>
+
+        <div class="container personaContainer col-sm">
+          <h1>User Persona</h1>
+          <p class="lead">Ezra was the basis point of research from the beginning serving as the proto-persona that evolved as data was gathered and condensed into more finite points in moving forward with the eventual creation of the Tern app. The experience of the app as we progress to it was made with Ezra as the user in mind.</p>
+
+          <div class="personaImgContainer">
+            <img src="./images/user-persona.png" alt="User Persona" class="personaImg">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="container travelContainer">
+          <div class="container">
+            <h1>I Like, I Wish, What If Method</h1>
+            <p class="lead">This served as a brainstorm of constructive feedback from a diverse group of users that helped in amassing a number ideas that could eventually be included within an app based on feasability.</p>
+          </div>
+
+          <div class="container travelImgContainer">
+            <img src="./images/ideation-board.png" alt="Ideation Board" class="travelImg">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="container empathyContainer">
+          <div class="container empathyImgContainer">
+            <img src="./images/feature-prioritization-matrix.png" alt="Feature Matrix" class="empathyImg">
+          </div>
+
+          <div class="container">
+            <h1>Feature Prioritization Matrix</h1>
+            <p class="lead">This matrix was used to gather feedback from a number of users on features they would love to see within a traveling app and which features should take precedence over others.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="container travelContainer">
+          <div class="container">
+            <h1>Storyboard</h1>
+            <p class="lead">A sequence of events representing the issue that needs to be solved and the resolution for our user Ezra Miles.</p>
+          </div>
+
+          <div class="container travelImgContainer">
+            <img src="./images/storyboard.png" alt="Storyboard" class="travelImg">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="container empathyContainer">
+          <div class="container empathyImgContainer">
+            <img src="./images/tern-user-flow.png" alt="User Flow" class="empathyImg">
+          </div>
+
+          <div class="container">
+            <h1>User Flow</h1>
+            <p class="lead">The path taken to complete a particular given task within the app.</p>
+          </div>
+
+        </div>
+      </div>
+        
+      </section>
+
+    <!-- Iteration Section -->
+    <section class="container-fluid" id="iteration">
+
+        <div class="row">
+          <div class="container iterationContainer">
+            <h1 class="display-4">Iteration</h1>
+          </div>
+
+          <div class="protoCopy">
+            <h1>Paper Prototypes</h1>
+            <p class="lead">During initial testing of the app, paper prototypes were created as a means of testing user flows from start to finish on a number of given tasks to be completed.</p>
+          </div>
+
+            <!-- Carousel -->
+            <div id="carouselExampleControls" class="carousel slide carouselContainer col-lg-6 col-md-6 col-sm-12" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/paper-proto-1.jpg" class="d-block w-100" alt="Prototype 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/paper-proto-2.jpg" class="d-block w-100" alt="Prototype 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/paper-proto-3.jpg" class="d-block w-100" alt="Prototype 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="row">
+              <div class="container travelContainer">
+                <div class="container">
+                  <h1>Low-Fidelity Wireframe</h1>
+                  <p class="lead">Including iterations made from the paper prototype testing. Figma was now going to act as the tool of choice for creating all wireframe fidelities and prototype testing.</p>
+                </div>
+      
+                <div class="container travelImgContainer">
+                  <img src="./images/tern-digital-wireframe.jpg" alt="Tern Wireframe" class="travelImg">
+                </div>
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="container empathyContainer">
+                <div class="container empathyImgContainer">
+                  <img src="./images/tern-mid-fidelity.jpg" alt="Mid Fidelity Prototype" class="empathyImg">
+                </div>
+      
+                <div class="container">
+                  <h1>Mid-Fidelity Wireframe</h1>
+                  <p class="lead">Iterations made from the low fidelity wireframe testing. In understanding the "ux" and what you should and should not ask for from the user, these screens were revamped to only ask for the minimum necessary information without feeling intrusive and still trying to convey a sense of ease when guiding new users through the sign-up flow.</p>
+                </div>
+      
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="container travelContainer">
+                <div class="container">
+                  <h1>High-Fidelity Wireframe</h1>
+                  <p class="lead">As a means of taking things a step further and getting a feel for what Tern could be as a modern app, a few screens were designed following Apple's iOS guidelines listed in their Human Interface Guidelines (HIG).</p>
+                </div>
+      
+                <div class="container travelImgContainer">
+                  <img src="./images/tern-high-fidelity-screens.jpg" alt="Tern Wireframe" class="travelImg">
+                </div>
+              </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- The Prototype -->
+    <section class="container-fluid" id="prototype">
+        <div class="row">
+          <div class="protoContainer">
+            <h1 class="display-4">Prototype</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="protoCopy">
+            <h1>High-Fidelity Prototype</h1>
+          </div>
+
+          <div class="row">
+            <div class="container travelContainer">
+              <div class="container">
+                <h3>Tern: See The World</h3>
+                <p class="lead">Tern is a traveling app that assists its users in curating a traveling experience with both unique food and sightseeing locations based on wherever they’re traveling to..</p>
+                <p class="lead ternLink"><a href="https://www.figma.com/proto/RNcmtjOJVtpbQDlhksHFIp/Tern-Mobile-App?page-id=0%3A1&node-id=13%3A13&viewport=261%2C48%2C0.15&scaling=scale-down&starting-point-node-id=13%3A13" target="_blank" rel="noopener"><strong>click here</strong> to view the Tern high-fidelity clickable prototype done in Figma</a></p>
+              </div>
+    
+              <div class="container travelImgContainer">
+                <img src="./images/tern-high-fidelity.jpg" alt="High Fidelity Prototype" class="travelImg">
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+    <!-- Conclusion/Final Thoughts -->
+    <section class="container-fluid" id="conclusion">
+      <div class="row">
+        <div class="finalContainer">
+          <h1 class="display-4">Conclusion</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="protoCopy">
+          <h1>Final Thoughts</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="container empathyContainer">
+          <div class="container empathyImgContainer">
+            <img src="./images/thought-idea.jpg" alt="Final Thoughts" class="empathyImg">
+          </div>
+
+          <div class="container">
+            <p class="lead">
+              <ul>
+                <li>- Ask questions, always!</li>
+                <li>- Users are necessary every step of the way</li>
+                <li>- iOS High-Fidelity for testing</li>
+                <li>- Iteration is your best friend</li>
+                <li>- Can't be a perfectionist the first time around</li>
+              </ul>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid footerContainer" id="contact">
+      <div class="row">
+        <div class="emailCopy">
+          <h1 class="display-5">Looking to get in touch?</h1>
+        <h6 class="display-6">Send me an email here!</h6>
+        </div>
+
+        <div class="myEmail">
+          <a href="mailto:siresquirebusiness@gmail.com" title="Email Stephen" target="_blank" rel="noopener">stephen.carrollkeene@gmail.com</a>
+      </div>
+      </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script src="js/metro.js"></script>
+</html>

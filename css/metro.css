@@ -1,0 +1,265 @@
+body * {
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+.ternBackground {
+    background-image: url(../images/coffee-beans.png);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #A9714C;
+    color: white;
+    height: 800px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ternCopy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    max-width: 100%;
+    padding: 2.2rem;
+}
+
+.sectionOne,
+.sectionTwo,
+.sectionThree,
+.sectionFour {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.researchContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #A9714C;
+    color: white;
+    height: 300px;
+    max-width: 100%;
+}
+
+.affinityContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.2rem;
+}
+
+.affinityImg {
+    max-width: 100%;
+    box-shadow: 8px 8px 8px 1px  rgba(0, 0, 0, .2);
+}
+
+.travelContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.travelImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 2.2rem;
+    margin: 1.1rem;
+}
+
+.travelImg {
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    box-shadow: 8px 8px 8px 1px  rgba(0, 0, 0, .2);
+}
+
+.empathyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.empathyImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 2.2rem;
+    margin: 1.1rem;
+}
+
+.empathyImg {
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    box-shadow: 8px 8px 8px 1px  rgba(0, 0, 0, .2);
+}
+
+.ideationContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #2A402C;
+    color: white;
+    height: 300px;
+    max-width: 100%;
+}
+
+.personaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.personaImg {
+    max-width: 90%;
+    box-shadow: 8px 8px 8px 1px  rgba(0, 0, 0, .2);
+}
+
+.personaImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 2.2rem;
+    margin: 1.1rem;
+}
+
+.iterationContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #B1C4B7;
+    color: white;
+    height: 300px;
+    max-width: 100%;
+}
+
+.protoCopy {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: baseline;
+    padding: 1rem;
+}
+
+.carouselContainer {
+    margin: 35px auto;
+}
+
+.protoContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #A9714C;
+    color: white;
+    height: 300px;
+    max-width: 100%;
+}
+
+.metroLink a {
+    text-decoration: none;
+    color: black;
+}
+
+.metroLink a:hover {
+    color: #B1C4B7;
+    text-decoration: underline;
+}
+
+.finalContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #2A402C;
+    color: white;
+    height: 300px;
+    max-width: 100%;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #B1C4B7;
+    color: white;
+    height: 300px;
+    max-width: 100%;
+}
+
+.emailCopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myEmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.myEmail a {
+    color: whitesmoke;
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+    h1, h3 {
+        text-align: center;
+    }
+
+    .ternBackground {
+        background-size: cover;
+        max-width: 100%;
+        height: 400px;
+    }
+
+    .ternCopy {
+        height: 800px;
+        margin: 0;
+    }
+
+    .affinityContainer {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .affinityImg {
+        padding: 0;
+    }
+
+    .affinityContainer,
+    .affinityImg,
+    .travelContainer,
+    .empathyContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .protoCopy {
+        margin: 0;
+    }
+}
