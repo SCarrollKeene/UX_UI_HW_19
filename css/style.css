@@ -445,6 +445,8 @@ p {
 .contact a {
     color: var(--color-blk-one);;
     font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: 400;
 }
 
 
@@ -497,14 +499,19 @@ footer li a {
   color: var(--color-wht-smoke);
 }
 
+i.fa.fa-envelope {
+    color: var(--color-charcoal);
+    text-decoration: none;
+}
+
 .fa:hover {
-  color: var(--color-btn-hover);
+  color: var(--color-primary);
   text-decoration: none;
   transform: translateY(-3px);
 }
 
 .fab:hover {
-  color: var(--color-btn-hover);
+  color: var(--color-primary);
   text-decoration: none;
   transform: translateY(-3px);
 }
