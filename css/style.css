@@ -283,6 +283,10 @@ p {
     outline: none;  
 }
 
+.scroll-btn:hover {
+    color: var(--color-primary);
+}
+
 .scroll-btn-icon,
 .scroll-btn-icon::before,
 .scroll-btn-icon::after {
