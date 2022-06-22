@@ -10,7 +10,7 @@
 
     /* Font Size */
     --ft-sz-16: 16px;
-    --ft-sz-24: 20px;
+    --ft-sz-24: 22px;
 
     --ft-h-md: 40px;
     --ft-h-lg: 60px;
@@ -447,7 +447,7 @@ p {
 }
 
 .contact a {
-    color: var(--color-blk-one);;
+    color: var(--color-charcoal);;
     font-size: 1.4rem;
     text-decoration: none;
     font-weight: 400;
@@ -662,8 +662,8 @@ li, p {
 
     .content h1 {
         padding: 2px;
-        font-size: 14px;
-        font-weight: 500;
+        font-size: 20px;
+        font-weight: 600;
     }
 
     .content-copy {
@@ -730,7 +730,7 @@ li, p {
     }
 
     .content p {
-        line-height: 1.6rem;
+        line-height: 1.8rem;
         font-size: 16px;
         text-align: justify;
     }
@@ -786,14 +786,16 @@ li, p {
 
     .myWork h1 {
         font-size: var(--ft-sz-24);
+        font-weight: 600;
     }
 
     .myWork h2 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .contact h1 {
         font-size: var(--ft-sz-24);
+        font-weight: 600;
     }
 
     footer {
