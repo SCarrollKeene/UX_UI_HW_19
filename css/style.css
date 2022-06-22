@@ -33,7 +33,7 @@
     --color-beaver: #A17B66;
     --color-beaver-drk: #856453;
 
-    --color-selection: #d8c08b70;
+    --color-selection: #5f5f5f70;
     --color-btn-hover: #b3917f;
 
     --color-wht: #ffffff;
@@ -57,7 +57,7 @@ body {
 
 /* Navbar */
 .navigation {
-    background-color: var(--color-beaver);
+    background-color: var(--color-charcoal);
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -100,7 +100,7 @@ ul {
 }
 
 li a {
-    color: var(--color-blk-one);
+    color: var(--color-wht-smoke);
     text-decoration: none;
     padding: 14px 16px;
     transition: background-color 0.3s ease;
@@ -120,15 +120,13 @@ li a:hover:not(.active) {
 .heroImg {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-dutch-wht);
+    background-color: var(--color-wht-smoke);
     background-blend-mode: normal;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     max-width: 100%;
-
-    margin: 20px 0 20px 0;
 }
 
 .heroImg > p {
@@ -160,6 +158,8 @@ li a:hover:not(.active) {
     align-items: flex-start;
     margin: 1.2rem;
     padding: 1.2rem;
+    width: 400px;
+    height: 400px;
 }
 
 .content h1 {
@@ -167,12 +167,30 @@ li a:hover:not(.active) {
 }
 
 .content h2 {
+    display: flex;
+    align-self: center;
     font-size: var(--ft-h-md);
 }
 
 .content p {
     font-size: var(--ft-sz-24);
     font-weight: 300;
+}
+
+.content-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin: 1rem;
+    width: 400px;
+    height: 400px;
+}
+
+.content h1 {
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 500;
 }
 
 .content img {
@@ -220,12 +238,14 @@ p {
 
 /* Button Styling */
 .CKR {
+    display: flex;
+    align-self: center;
     text-decoration: none;
 }
 
 .button {
-    background-color: var(--color-beaver-drk);
-    border: 1px solid var(--color-beaver-drk);
+    background-color: var(--color-charcoal);
+    border: 1px solid var(--color-charcoal);
     border-radius: 25px;
     padding: 15px 20px;
     display: inline-block;
@@ -238,13 +258,14 @@ p {
 
 .button:hover {
     cursor: pointer;
-    background-color: var(--color-btn-hover);
-    border: 1px solid var(--color-btn-hover);
+    color: var(--color-charcoal);
+    background-color: var(--color-wht-smoke);
+    border: 1px solid var(--color-charcoal);
 }
 
 /* Back to Top btn */
 .scroll-btn {
-    background-color: var(--color-beaver-drk); 
+    background-color: var(--color-charcoal); 
     height: 4rem;
     width: 4rem;
     position: fixed;
@@ -262,11 +283,6 @@ p {
     outline: none;  
 }
 
-.scroll-btn:hover {
-    background-color: var(--color-btn-hover);
-    border: 1px solid var(--color-wht);
-}
-
 .scroll-btn-icon,
 .scroll-btn-icon::before,
 .scroll-btn-icon::after {
@@ -278,8 +294,7 @@ p {
 .myWork {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-khaki);
-    padding: 20px;
+    background-color: var(--color-wht-smoke);
 }
 
 .myWork h1 {
@@ -407,7 +422,7 @@ p {
     flex-direction: column;
     justify-content: center;
     height: 300px;
-    background-color: var(--color-grullo);
+    background-color: var(--color-wht-smoke);
 }
 
 .contact h1 {
@@ -428,8 +443,8 @@ p {
 }
 
 .contact a {
-    color: var(--color-blk-one);
-    font-size: 1.1rem;
+    color: var(--color-blk-one);;
+    font-size: 1.4rem;
 }
 
 
@@ -540,6 +555,10 @@ li, p {
         width: 300px;
     }
 
+    .content p {
+        text-align: justify;
+    }
+
     .inline-block {
         display: flex;
         flex-direction: row;
@@ -562,7 +581,7 @@ li, p {
 
     .workGrid {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         column-gap: 1rem;
         row-gap: 1rem;
         padding: 20px;
@@ -587,6 +606,17 @@ li, p {
         height: 830px;
     }
 
+    .content-name {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .content-name,
+    .content-copy {
+        height: auto;
+    }
+
     .content h1 {
         font-size: 26px;
         font-weight: 500;
@@ -608,6 +638,29 @@ li, p {
 
 /* 600px */
 @media only screen and (max-width: 37.5em) {
+
+    .content-name {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        height: 10%;
+        width: 80%;
+    }
+
+    .content h1 {
+        padding: 2px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .content-copy {
+        margin: 0;
+        padding: 0;
+        width: 80%;
+        height: auto;
+    }
    
     .inline-block {
         display: flex;
@@ -647,13 +700,9 @@ li, p {
     .content {
         display: flex;
         width: 50%;
+        height: fit-content;
         font-size: var(--ft-sz-16);
         line-height: 1rem;
-    }
-
-    .content h1 {
-        font-size: 20px;
-        font-weight: 500;
     }
 
     .content img {
@@ -671,7 +720,8 @@ li, p {
 
     .content p {
         line-height: 1.6rem;
-        font-size: 15px;
+        font-size: 16px;
+        text-align: justify;
     }
 
     .CKR {
@@ -728,7 +778,7 @@ li, p {
     }
 
     .myWork h2 {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .contact h1 {
@@ -740,6 +790,10 @@ li, p {
         flex-direction: column;
         row-gap: 2rem;
         height: 400px;
+    }
+
+    .contact {
+        max-width: 100%;
     }
 
     footer ul {
@@ -762,6 +816,11 @@ li, p {
 @media only screen and (max-width: 25.875em) {
     .content {
         width: 80%;
+    }
+
+    content h1 {
+        font-size: 14px;
+        font-weight: 400;
     }
 
     .workGrid {
