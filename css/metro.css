@@ -55,9 +55,17 @@ body * {
     padding: 2.2rem;
 }
 
-.affinityImg {
+.interviewGif {
     max-width: 100%;
     box-shadow: 8px 8px 8px 1px  rgba(0, 0, 0, .2);
+}
+
+.interviewCopy {
+    padding: 1rem;
+    margin: 1rem;
+    width: 75%;
+    max-width: 75%;
+    text-align: left;
 }
 
 .travelContainer {
@@ -78,8 +86,8 @@ body * {
 
 .travelImg {
     object-fit: cover;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 25%;
+    min-height: auto;
     box-shadow: 8px 8px 8px 1px  rgba(0, 0, 0, .2);
 }
 
@@ -101,8 +109,8 @@ body * {
 
 .empathyImg {
     object-fit: cover;
-    min-width: 100%;
-    min-height: 100%;
+    max-width: 50%;
+    min-height: auto;
     box-shadow: 8px 8px 8px 1px  rgba(0, 0, 0, .2);
 }
 
